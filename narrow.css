@@ -1,0 +1,226 @@
+/* CSS file */
+
+header {
+  width:100%;
+  min-height:630px;
+  margin-bottom:-10px;
+  padding:0;
+  background:url('../images/bones/pirates_mobilebg.jpg') center 0 no-repeat;
+  display:block;
+  background-attachment:fixed;
+  background-size:cover;
+}
+
+#scroll_arrows {
+  display:block;
+  width:45px;
+  position:relative;
+  align-self:center;
+  margin:0px auto;
+  top:25rem;
+}
+
+body { width:100%; }
+
+#smoak_logo { 
+  width:87%;
+  position:relative;
+  z-index:100;
+}
+
+#header_gradient { 
+  z-index:0;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+}
+
+.hamburger {
+  background:none;
+  position:absolute;
+  top:3px;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#f7f7f7;
+  border:0;
+  font-size:1.4rem;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+/* .cross {
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:13px 15px 0px 15px;
+  color:#f7f7f7;
+  border:0;
+  font-size:3rem;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+*/
+
+#topmenu {
+  z-index:1000;
+  font-weight:bold;
+  font-size:0.8rem;
+  width:100%;
+  background:#131313;
+  position:absolute;
+  top:75px;
+  text-align:center;
+}
+
+.hidden { display:none; }
+
+.menu {
+  margin:0px;
+  padding:0px;
+  list-style-type:none;
+}
+
+.menu li {
+  display:block;
+  padding:15px 0px;
+  border-bottom:#1d1f20 1px solid;
+}
+
+.menu li:hover {
+  display:block;
+  background:#181818; 
+  padding:15px 0px; 
+  border-bottom:#1d1f20 1px solid;
+}
+
+.menu li a {
+  text-decoration:none;
+  margin:0px;
+  color:#f7f7f7;
+}
+
+.menu li a:hover {
+  text-decoration:none;
+  color:#f7f7f7;
+}
+
+#wrapper {
+  width:100%;
+}
+
+#photo_slider, #info_slider, .upcoming_wrapper { display:none; }
+
+h4.heading_alt { width:70%; }
+
+h4.heading_alt, h4.heading_left {
+  position:relative;
+  font-size:1rem;
+  font-weight:bold;
+  display:block;
+  margin:10px 0px;
+  color:#f7f7f7;
+  background-color:#912020;
+  padding:4px 10px 2px 30px;
+}
+
+ul.upcoming_alt_list {
+  list-style-type:none;
+  padding:10px 0px 15px 20px;
+}
+
+.info_opera_alt {
+  font-size:1rem;
+  font-weight:bold;
+  color:#000;
+}
+
+.info_opera2_alt {
+  font-size:0.95rem;
+  color:#000;
+}
+
+.info_composer_alt {
+  font-size:0.9rem;
+  font-style:italic;
+  color:#000;
+}
+
+.info_company_alt {
+  font-size:0.95rem;
+  color:#000;
+}
+
+.info_dates_alt {
+  font-size:0.9rem;
+  color:#000;
+}
+
+/* ===== columns ===== */
+.column1 {
+  width:100%;
+  margin:10px 0px 0px 0px;
+}
+
+.column2 {
+  width:100%;
+  margin:10px 0px;
+}
+
+.column3 {
+  width:100%;
+  margin:10px 0px;
+}
+
+.column3_img {
+  position:absolute;
+  right:0px;
+  top:0px;
+  width:100%;
+  margin:10px 0px;
+}
+
+.column1_2 {
+  width:100%;
+  margin:10px 0px 0px 0px;
+}
+
+.column2_3 {
+  width:100%;
+  margin:10px 0px;
+}
+
+.column1_2_3 {
+  width:100%;
+  margin:10px 0px;
+}
+
+.column_press_a {
+  width:100%;
+  margin:10px 0px;
+  padding:0px 20px;
+  float:left;
+}
+
+.column_press_b {
+  width:100%;
+  margin:10px 0px;
+  padding:0px 20px;
+  float:right;
+}
+
+footer {
+  width:90%;
+  text-align:center; 
+  padding:10px 0 25px 0;
+  color:#f7f7f7;
+  margin:0px auto;
+  font-size:0.75rem;
+}

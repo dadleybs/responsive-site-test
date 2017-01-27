@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bradley Smoak, bass-baritone</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" media='screen and (min-width: 960px)' href="css/wide.css" />
+  <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 959px)" href="css/medium.css" />
+  <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/narrow.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+    $('.hamburger').click(function() {
+      $('#topmenu').toggleClass('hidden');
+    })
+  </script>
+  <script>
+    // Add smooth scrolling to anchor links
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+<!-- photo slider -->
+  <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="sss/sss.min.js"></script>
+<!-- info slider -->
+  <link rel="stylesheet" href="css/intelligentslider.css" type="text/css" media="all">
+  <script src="js/jquery.intelligentslider.min.js"></script>
+  <script>
+    jQuery(function($) {
+      $('.info_slider').intelligentslider({
+        animation : 'push', // Set animation style - Choose from 'push', 'reveal', 'cover', or 'fade'.
+        animationSpeed : 600,  // Transition speed in milliseconds.
+        continuous : true, // If set to false animation, will stop at the first/last slide.
+        startingSlide : 1, // Number of slide to display first.
+        slideShow : true, // Set to false to prevent Intelligent Slider from automatically animating.
+        slideShowSpeed : 8000, // Slideshow speed in milliseconds.
+        pauseButton : false, // Allow the user to pause the slideshow (Automatically disabled if slideShow is set to false).
+        navArrows : true, // Show/hide navigation arrows.
+        keyboardNav : false, // Allow users to navigate slides using the arrow keys.
+        cropSlides : false, // If set to true, Intelligent Slider will fix it's height to equal that of the shortest slide.
+        controlWrapper : '', // Designate an element to act as the thumbnail wrapper.
+        generateThumbs : true, // Generate thumbnails automatically using the 'data-thumb' attribute (see below for details).
+        styleThumbs : true, // Set to false to style generated thumbs manually.
+        maxThumbWidth : '0%', // The maximum width, as a percentage of the width of the slider, that the thumbnails can be (prevents sliders 			with only a few thumbnails looking ridiculous...).
+        beforeSlideFunction : function() {}, // This function runs at the beginning of each transition.
+        afterSlideFunction : function() {} // This function runs at the end of each transition.
+      });
+    });
+  </script>
+  <script>
+    jQuery(function($) {
+      $('.photo_slider').sss({
+        slideShow : true, // Set to false to prevent SSS from automatically animating.
+        startingSlide : 0, // Slide to display first. Uses array notation (0 = first slide).
+        speed : 6500, // Slideshow speed in milliseconds.
+        showNav : true // Set to false to hide navigation arrows.
+      });
+    });
+  </script>
+</head>
+<body id="home">
+  <a id="top"></a>
+<!--==============================header=================================-->
+  <header>
+    <img id="smoak_logo" src="images/bones/smoak_logonarrow.png" style="float:left" alt="Bradley Smoak" />
+    <img id="header_gradient" src="images/bones/header_gradient.png" />
+    <button class="hamburger">&#9776;</button>
+<!--  <button class="cross">&#735;</button>  -->
+    <nav>
+      <ul id="topmenu" class="menu hidden">
+        <li><a href="news.html">news</a></li>
+        <li><a href="career_bio.html">biography</a></li>
+        <li><a href="calendar/upcoming.html">calendar</a></li>
+        <li><a href="media.html">media</a></li>
+        <li><a href="press.html">press</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <a href="#alt"><img id="scroll_arrows" src="images/bones/scroll_arrows.png" alt="scroll down" /></a>
+  </header>
+  <div class="clear" style="height:10px;"></div>
+<!--==============================content================================-->
+  <section id="wrapper">
+<!--========= photo slider ==========-->                
+    <div id="photo_slider" class="column1_2 fleft">
+      <div class="photo_slider">
+        <img src="images/slide1.jpg" />
+        <img src="images/slide2.jpg" />
+        <img src="images/slide3.jpg" />
+        <img src="images/slide4.jpg" />
+        <img src="images/slide7.jpg" />
+        <img src="images/slide5.jpg" />
+        <img src="images/slide6.jpg" />
+      </div>
+    </div>
+<!--======== info slider ========-->  
+    <div id="info_slider" class="column3 upcoming_wrapper fright">
+      <h2 class="upcoming_heading">UPCOMING PERFORMANCES</h2>
+      <div class="info_slider">
+        <div class="info_details">
+          <p class="info_opera">CARMEN</p>
+          <p class="info_composer">BIZET</p>
+          <p class="space">&nbsp;</p>
+          <p class="info_company">LYRIC OPERA OF CHICAGO</p>
+          <p class="info_dates">February 11, 15, 19, 22, 28, 2017<br>March 3, 6, 16, 19, 22, 25</p>
+        </div>
+        <div class="info_details">
+          <p class="info_opera2">CELEBRATING PL&Aacute;CIDO</p>
+          <p class="info_composer">CONCERT EVENT</p>
+          <p class="space">&nbsp;</p>
+          <p class="info_company">LYRIC OPERA OF CHICAGO</p>
+          <p class="info_dates">March 9, 2017</p>
+        </div>		
+        <div class="info_details">
+          <p class="info_opera">CYRANO</p>
+          <p class="info_composer">DICHIERA</p>
+          <p class="space">&nbsp;</p>
+          <p class="info_company">MICHIGAN OPERA THEATRE</p>
+          <p class="info_dates">May 13, 17, 20, 21, 2017</p>
+        </div>	
+      </div>
+    </div>
+<!-- ===== alt upcoming tile ===== -->
+    <a id="alt"></a>
+    <div id="upcoming_alt" class="column3 fright">
+      <h4 class="heading_alt">UPCOMING PERFORMANCES</h4>
+      <ul class="upcoming_alt_list">
+        <li class="info_opera_alt">CARMEN</li>
+        <li class="info_composer_alt">Bizet</li>
+        <li class="info_company_alt"><a class="discreet" target="_blank" href="https://www.lyricopera.org/concertstickets/calendar/2016-2017/productions/lyricopera/carmen">Lyric Opera of Chicago</a></li>
+        <li class="info_dates_alt">Feb 11 - 28, Mar 3 - 25, 2017</li>
+      </ul>
+      <ul class="upcoming_alt_list">
+        <li class="info_opera_alt">CELEBRATING PL&Aacute;CIDO</li>
+        <li class="info_composer_alt">Concert Event</li>
+        <li class="info_company_alt"><a class="discreet" target="_blank" href="https://www.lyricopera.org/concertstickets/calendar/2016-2017/productions/lyricopera/celebratingplacido">Lyric Opera of Chicago</a></li>
+        <li class="info_dates_alt">Mar 9, 2017</li>
+      </ul>
+      <ul class="upcoming_alt_list">
+        <li class="info_opera_alt">CYRANO</li>
+        <li class="info_composer_alt">DiChiera</li>
+        <li class="info_company_alt"><a class="discreet" target="_blank" href="http://www.michiganopera.org/opera/cyrano/">Michigan Opera Theatre</a></li>
+        <li class="info_dates_alt_last">May 13 - 21, 2017</li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+<!-- ========= main content ========= -->           
+    <h4 class="heading_left" style="width:200px;">LATEST NEWS</h4>
+    <div class="column1_2_3 main_content">
+      <h3 class="news_headline"><a target="_blank" href="http://www.wfmt.com/programs/ryan-opera-center-recital-series/">Missed it live? CLICK HERE: Bradley Smoak in Recital on WFMT.com</a></h3>
+      <p class="news_date space">14 October 2016</p>
+      <p class="justify space">If you missed the live broadcast of WMFT's latest installment of the Ryan Opera Center's Recital Series, don't worry! You can hear the program in its entirety by clicking the link below. Bass-baritone Bradley Smoak and mezzo-soprano Lindsay Metzger, with pianists Mario Antonio Marra and Craig Terry, perform songs by Beethoven, Sibelius, Bernstein, and Irving Berlin on Chicago's home for classical music, 98.7 WFMT. <a target="_blank" href="http://www.wfmt.com/programs/ryan-opera-center-recital-series/">Click here</a> to hear the program online at WFMT.com.</p>
+      <div class="border_red" style="width:350px;">&nbsp;</div>
+          
+      <h3 class="news_headline"><a target="_blank" href="http://chicagoclassicalreview.com/2016/07/ryan-center-artists-shine-brightly-in-floyds-dark-of-mice-and-men/">"Ryan Center artists shine brightly in Floyd’s dark <em>Of Mice and Men</em>"</a></h3>
+      <p class="news_date space">1 August 2016</p>
+      <p class="justify space">In his article for Chicago Classical Review, Lawrence A. Johnson praises the members of the Ryan Opera Center and Grant Park Festival Orchestra for their presentation of Act I from Carlisle Floyd's American masterpiece <em>Of Mice and Men</em>, based on the Steinbeck classic. Included in his review is acclaim for Bradley Smoak, who "brought a warm, rounded bass-baritone to Candy, the old hand whose dog is executed." Click below to read the full review.</p>
+      <p class="space"><a target="_blank" class="discreet" href="http://chicagoclassicalreview.com/2016/07/ryan-center-artists-shine-brightly-in-floyds-dark-of-mice-and-men/">More...</a></p>
+      <div class="border_red" style="width:350px;">&nbsp;</div>
+          
+      <h3 class="news_headline"><a target="_blank" href="http://cso.org/globalassets/about/pr-press-releases/2015-16/civic-orchestra_ryan-opera-center_june-6.pdf">Ryan Opera Center artists join Civic Orchestra of Chicago at Symphony Hall</a></h3>
+      <p class="news_date space">3 June 2016</p>
+      <p class="justify space">The Civic Orchestra of Chicago, the pre-professional training orchestra of the Chicago Symphony Orchestra, presents a special collaborative program with The Patrick G. and Shirley W. Ryan Opera Center on Monday, June 6, at 8 p.m. led by Lyric Opera of Chicago music director Sir Andrew Davis. The program will take its cue from the many celebrations recognizing the 400th anniversary of the death of William Shakespeare and will include works by Berlioz, Vaughan Williams, Verdi, Walton and Ambroise Thomas. The concert represents the third time that the two institutions have collaborated to perform together at Symphony Center, and promises to be an evening of Shakespeare-inspired artistry not to be missed!</p>
+      <p class="space"><a target="_blank" class="discreet" href="http://cso.org/globalassets/about/pr-press-releases/2015-16/civic-orchestra_ryan-opera-center_june-6.pdf">More...</a></p>
+      <div class="border_red" style="width:350px;">&nbsp;</div>
+                        
+      <h3 class="news_headline"><a href="news/2016/lenyaresults.html">Smoak honored with inaugural Marc Blitzstein Award at 2016 Lotte Lenya</a></h3>
+      <p class="news_date space">18 April 2016</p>
+      <p class="justify space">From an extremely competitive field of 224 international performers, following preliminary and semi-final rounds of competition, 14 finalists were selected to compete for the prestigious Lotte Lenya Competition Finals held by the Kurt Weill Foundation for Music on April 16 at the Eastman School of Music. Of the winners, Bradley Smoak was honored with the first ever Marc Blitzstein Award, given to highlight the most outstanding performance of an individual piece from the "Golden Era" of American musical theater for his performance of "Pass that Football" from Leonard Bernstein's <em>Wonderful Town</em>. Click below for more information and videos of Mr. Smoak's award-winning performance. </p>
+      <p class="space"><a class="discreet" href="news/2016/lenyaresults.html">More...</a></p>
+      <div class="border_red" style="width:350px;">&nbsp;</div>
+                        
+      <h3 class="news_headline"><a target="_blank" href="http://www.rayfieldallied.com/artists/bradley-smoak/">Bradley Smoak represented worldwide by Deborah Sanders, Rayfield Allied</a></h3>
+      <p class="news_date space">8 April 2016</p>
+      <p class="justify space">Effective immediately, Bradley Smoak will be represented professionally by artist manager Deborah Sanders for all opera and concert performances. Sanders is Director of Opera for Rayfield Allied, one of the premiere firms based in London, and represents singers around the world with success at every level of the business, including the Metropolitan Opera, Lyric Opera of Chicago, Royal Opera House Covent Garden, Opera Australia and Washington National Opera, just to name a few. <a href="contact.html">Click here</a> for contact details or click below for the Rayfield Allied website.</p>
+      <p class="space"><a target="_blank" class="discreet" href="http://www.rayfieldallied.com/artists/bradley-smoak/">More...</a></p>
+      <div class="border_red" style="width:350px;">&nbsp;</div>
+                        
+      <h3 class="news_headline"><a href="#">Mr. Smoak wins top prize in American Opera Society of Chicago Competition</a></h3>
+      <p class="news_date space">8 March 2016</p>
+      <p class="justify space">Bradley Smoak is thrilled to announce that he has won the top prize and title of "Best Vocal Artist" in the 2016 American Opera Society of Chicago Competition. The AOS was established in 1921, and this competition highlights musical talents in and around the Chicago area, including singers and instrumentalists. Contestants are judged on a variety of repertoire showing mastery of technique, style, command of language, interpretation and stage presence. The scholarship prize includes a cash award as well as an appearance in an upcoming event hosted by the AOS of Chicago.</p>
+      <div class="clear"></div>
+      <div class="border_red" style="width:600px;margin:10px auto 30px auto;">&nbsp;</div>
+<!--============= back to top ===============-->
+      <div class="to_top aligncenter"><a href="#top" onMouseOver="document.getElementById('totop').src='images/bones/totop_active.png'" onMouseOut="document.getElementById('totop').src='images/bones/totop.png'"><img id="totop" src="images/bones/totop.png" width="35"  /><br />to top</a></div>
+    </div>
+  </section>
+<!--==============================footer=================================-->
+  <footer>
+    Official site of bass-baritone Bradley Smoak &nbsp; &nbsp;|&nbsp; &nbsp; Copyright &copy; 2015 &nbsp; &nbsp;|&nbsp; &nbsp; All Rights Reserved  
+  </footer>
+</body>
+</html>
